@@ -1,1 +1,7 @@
-spring.application.name=airbnb-platform-back
+spring:
+  liquibase:
+    contexts: dev
+
+  docker:
+    compose:
+      enabled: false
