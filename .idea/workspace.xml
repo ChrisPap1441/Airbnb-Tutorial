@@ -5,24 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2d9ae65c-b6f9-46cd-b35c-bb60d52e3af1" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/backend/airbnb-platform-back/src/main/java/com/chris/airbnb_platform_back/booking/domain/Booking.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/airbnb-platform-back/src/main/java/com/chris/airbnb_platform_back/booking/mapper/BookingMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/airbnb-platform-back/src/main/java/com/chris/airbnb_platform_back/booking/repository/BookingRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/airbnb-platform-back/src/main/java/com/chris/airbnb_platform_back/infrastructure/config/DatabaseConfiguration.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/airbnb-platform-back/src/main/java/com/chris/airbnb_platform_back/listing/domain/BookingCategory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/airbnb-platform-back/src/main/java/com/chris/airbnb_platform_back/listing/domain/Listing.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/airbnb-platform-back/src/main/java/com/chris/airbnb_platform_back/listing/domain/ListingPicture.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/airbnb-platform-back/src/main/java/com/chris/airbnb_platform_back/listing/mapper/ListingMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/airbnb-platform-back/src/main/java/com/chris/airbnb_platform_back/listing/mapper/ListingPictureMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/airbnb-platform-back/src/main/java/com/chris/airbnb_platform_back/listing/repository/ListingPictureRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/airbnb-platform-back/src/main/java/com/chris/airbnb_platform_back/listing/repository/ListingRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/airbnb-platform-back/src/main/java/com/chris/airbnb_platform_back/sharedkernel/domain/AbstractAuditingEntity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/airbnb-platform-back/src/main/java/com/chris/airbnb_platform_back/user/domain/Authority.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/airbnb-platform-back/src/main/java/com/chris/airbnb_platform_back/user/domain/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/airbnb-platform-back/src/main/java/com/chris/airbnb_platform_back/user/mapper/UserMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/airbnb-platform-back/src/main/java/com/chris/airbnb_platform_back/user/repository/UserRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/airbnb-platform-back/src/main/resources/application-dev.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/airbnb-platform-back/src/main/resources/application-prod.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/airbnb-platform-back/src/main/java/com/chris/airbnb_platform_back/infrastructure/config/SecurityConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/airbnb-platform-back/src/main/java/com/chris/airbnb_platform_back/infrastructure/config/SecurityUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/airbnb-platform-back/src/main/java/com/chris/airbnb_platform_back/user/application/UserException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/airbnb-platform-back/src/main/java/com/chris/airbnb_platform_back/user/application/UserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/airbnb-platform-back/src/main/java/com/chris/airbnb_platform_back/user/application/dto/ReadUserDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/airbnb-platform-back/src/main/java/com/chris/airbnb_platform_back/user/presentation/AuthResource.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/airbnb-platform-back/src/main/java/com/chris/airbnb_platform_back/user/mapper/UserMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/airbnb-platform-back/src/main/java/com/chris/airbnb_platform_back/user/mapper/UserMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/airbnb-platform-back/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/backend/airbnb-platform-back/src/main/resources/application.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,8 +24,9 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Enum" />
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Record" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -72,6 +64,10 @@
   </component>
   <component name="RunManager">
     <configuration name="AirbnbPlatformBackApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <envs>
+        <env name="AUTH0_CLIENT_ID" value="R2qo8fv5Q7QgvTYwFV8c7xBkIPA2OYPQ" />
+        <env name="AUTH0_CLIENT_SECRET" value="8IbViaPPgd87cF31rfkF8WogGWmNZrGn_2_EvUy52zcGMKwldLcgeISXxbkzSZfn" />
+      </envs>
       <option name="MAIN_CLASS_NAME" value="com.chris.airbnb_platform_back.AirbnbPlatformBackApplication" />
       <module name="airbnb-platform-back" />
       <extension name="coverage">
