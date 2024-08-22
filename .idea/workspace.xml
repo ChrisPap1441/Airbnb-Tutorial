@@ -5,15 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2d9ae65c-b6f9-46cd-b35c-bb60d52e3af1" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/backend/airbnb-platform-back/src/main/java/com/chris/airbnb_platform_back/infrastructure/config/SecurityConfiguration.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/airbnb-platform-back/src/main/java/com/chris/airbnb_platform_back/infrastructure/config/SecurityUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/airbnb-platform-back/src/main/java/com/chris/airbnb_platform_back/user/application/UserException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/airbnb-platform-back/src/main/java/com/chris/airbnb_platform_back/user/application/UserService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/airbnb-platform-back/src/main/java/com/chris/airbnb_platform_back/user/application/dto/ReadUserDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/airbnb-platform-back/src/main/java/com/chris/airbnb_platform_back/user/presentation/AuthResource.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/airbnb-platform-back/src/main/java/com/chris/airbnb_platform_back/user/mapper/UserMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/airbnb-platform-back/src/main/java/com/chris/airbnb_platform_back/user/mapper/UserMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/airbnb-platform-back/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/backend/airbnb-platform-back/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/airbnb-platform-front/angular.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/airbnb-platform-front/angular.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/airbnb-platform-front/src/app/app.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/airbnb-platform-front/src/app/app.config.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/airbnb-platform-front/src/app/layout/navbar/navbar.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/airbnb-platform-front/src/app/layout/navbar/navbar.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/airbnb-platform-front/src/app/layout/navbar/navbar.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/airbnb-platform-front/src/app/layout/navbar/navbar.component.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -95,6 +91,19 @@
       <option name="presentableId" value="Default" />
       <updated>1723578707254</updated>
     </task>
+    <task id="LOCAL-00001" summary="Authentication and Authorization (Auth0) Backend">
+      <option name="closed" value="true" />
+      <created>1724275102576</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1724275102576</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Authentication and Authorization (Auth0) Backend" />
+    <option name="LAST_COMMIT_MESSAGE" value="Authentication and Authorization (Auth0) Backend" />
   </component>
 </project>
