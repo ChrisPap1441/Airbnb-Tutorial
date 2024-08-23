@@ -4,33 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2d9ae65c-b6f9-46cd-b35c-bb60d52e3af1" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/backend/airbnb-platform-back/src/main/java/com/chris/airbnb_platform_back/booking/application/dto/BookedDateDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/airbnb-platform-back/src/main/java/com/chris/airbnb_platform_back/listing/application/LandlordService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/airbnb-platform-back/src/main/java/com/chris/airbnb_platform_back/listing/application/dto/CreatedListingDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/airbnb-platform-back/src/main/java/com/chris/airbnb_platform_back/listing/application/dto/DisplayCardListingDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/airbnb-platform-back/src/main/java/com/chris/airbnb_platform_back/listing/application/dto/DisplayListingDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/airbnb-platform-back/src/main/java/com/chris/airbnb_platform_back/listing/application/dto/ListingCreateBookingDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/airbnb-platform-back/src/main/java/com/chris/airbnb_platform_back/listing/application/dto/PictureService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/airbnb-platform-back/src/main/java/com/chris/airbnb_platform_back/listing/application/dto/SaveListingDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/airbnb-platform-back/src/main/java/com/chris/airbnb_platform_back/listing/application/dto/SearchDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/airbnb-platform-back/src/main/java/com/chris/airbnb_platform_back/listing/application/dto/sub/DescriptionDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/airbnb-platform-back/src/main/java/com/chris/airbnb_platform_back/listing/application/dto/sub/LandlordListingDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/airbnb-platform-back/src/main/java/com/chris/airbnb_platform_back/listing/application/dto/sub/ListingInfoDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/airbnb-platform-back/src/main/java/com/chris/airbnb_platform_back/listing/application/dto/sub/PictureDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/airbnb-platform-back/src/main/java/com/chris/airbnb_platform_back/listing/application/dto/vo/BathsVO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/airbnb-platform-back/src/main/java/com/chris/airbnb_platform_back/listing/application/dto/vo/BedroomsVO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/airbnb-platform-back/src/main/java/com/chris/airbnb_platform_back/listing/application/dto/vo/BedsVO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/airbnb-platform-back/src/main/java/com/chris/airbnb_platform_back/listing/application/dto/vo/DescriptionVO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/airbnb-platform-back/src/main/java/com/chris/airbnb_platform_back/listing/application/dto/vo/GuestsVO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/airbnb-platform-back/src/main/java/com/chris/airbnb_platform_back/listing/application/dto/vo/PriceVO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/airbnb-platform-back/src/main/java/com/chris/airbnb_platform_back/listing/application/dto/vo/TitleVO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/airbnb-platform-back/src/main/java/com/chris/airbnb_platform_back/listing/presentation/LandlordResource.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/airbnb-platform-back/src/main/java/com/chris/airbnb_platform_back/user/application/Auth0Service.java" afterDir="false" />
+    <list default="true" id="2d9ae65c-b6f9-46cd-b35c-bb60d52e3af1" name="Changes" comment="Create a listing for landlord Backend">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/airbnb-platform-back/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/backend/airbnb-platform-back/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/airbnb-platform-back/src/main/java/com/chris/airbnb_platform_back/listing/mapper/ListingMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/airbnb-platform-back/src/main/java/com/chris/airbnb_platform_back/listing/mapper/ListingMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/airbnb-platform-back/src/main/java/com/chris/airbnb_platform_back/listing/mapper/ListingPictureMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/airbnb-platform-back/src/main/java/com/chris/airbnb_platform_back/listing/mapper/ListingPictureMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/airbnb-platform-front/src/app/layout/navbar/navbar.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/airbnb-platform-front/src/app/layout/navbar/navbar.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/airbnb-platform-front/src/app/layout/navbar/navbar.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/airbnb-platform-front/src/app/layout/navbar/navbar.component.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -121,11 +98,20 @@
       <option name="project" value="LOCAL" />
       <updated>1724275102576</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Create a listing for landlord Backend">
+      <option name="closed" value="true" />
+      <created>1724345914089</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1724345914089</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Authentication and Authorization (Auth0) Backend" />
-    <option name="LAST_COMMIT_MESSAGE" value="Authentication and Authorization (Auth0) Backend" />
+    <MESSAGE value="Create a listing for landlord Backend" />
+    <option name="LAST_COMMIT_MESSAGE" value="Create a listing for landlord Backend" />
   </component>
 </project>
