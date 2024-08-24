@@ -6,6 +6,8 @@ import com.chris.airbnb_platform_back.listing.application.dto.CreatedListingDTO;
 import com.chris.airbnb_platform_back.listing.application.dto.DisplayCardListingDTO;
 import com.chris.airbnb_platform_back.listing.application.dto.SaveListingDTO;
 import com.chris.airbnb_platform_back.listing.application.dto.sub.PictureDTO;
+import com.chris.airbnb_platform_back.sharedkernel.service.State;
+import com.chris.airbnb_platform_back.sharedkernel.service.StatusNotification;
 import com.chris.airbnb_platform_back.user.application.UserException;
 import com.chris.airbnb_platform_back.user.application.UserService;
 import com.chris.airbnb_platform_back.user.application.dto.ReadUserDTO;
@@ -84,5 +86,26 @@ public class LandlordResource {
                 throw new UserException(String.format("Cannot parse multipart file: %s", multipartFile.getOriginalFilename()));
             }
         };
+    }
+
+    @GetMapping(value = "/get-all")
+    @PreAuthorize("hasAnyRole('" + SecurityUtils.ROLE_LANDLORD + "')")
+    public ResponseEntity<List<DisplayCardListingDTO>> getAll() {
+        ReadUserDTO connectedUser = userService.getAuthenticatedUserFromSecurityContext();
+        List<DisplayCardListingDTO> allProperties = landlordService.getAllProperties(connectedUser);
+        return ResponseEntity.ok(allProperties);
+    }
+
+    @DeleteMapping("/delete")
+    @PreAuthorize("hasAnyRole('" + SecurityUtils.ROLE_LANDLORD + "')")
+    public ResponseEntity<UUID> delete(@RequestParam UUID publicId) {
+        ReadUserDTO connectedUser = userService.getAuthenticatedUserFromSecurityContext();
+        State<UUID, String> deleteState = landlordService.delete(publicId, connectedUser);
+        if (deleteState.getStatus().equals(StatusNotification.OK)) {
+            return ResponseEntity.ok(deleteState.getValue());
+        } else if (deleteState.getStatus().equals(StatusNotification.UNAUTHORIZED)) {
+            return ResponseEntity.status(HttpStatus.UNAUTHORIZED).build();
+        }
+        return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).build();
     }
 }

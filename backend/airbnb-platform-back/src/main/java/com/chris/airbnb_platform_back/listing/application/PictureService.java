@@ -1,4 +1,4 @@
-package com.chris.airbnb_platform_back.listing.application.dto;
+package com.chris.airbnb_platform_back.listing.application;
 
 import com.chris.airbnb_platform_back.listing.application.dto.sub.PictureDTO;
 import com.chris.airbnb_platform_back.listing.domain.Listing;

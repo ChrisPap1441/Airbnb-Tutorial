@@ -5,16 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2d9ae65c-b6f9-46cd-b35c-bb60d52e3af1" name="Changes" comment="Create a listing for landlord Backend">
-      <change afterPath="$PROJECT_DIR$/backend/airbnb-platform-back/src/main/resources/static/assets/countries.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/airbnb-platform-back/src/main/java/com/chris/airbnb_platform_back/sharedkernel/service/State.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/airbnb-platform-back/src/main/java/com/chris/airbnb_platform_back/sharedkernel/service/StateBuilder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/airbnb-platform-back/src/main/java/com/chris/airbnb_platform_back/sharedkernel/service/StatusNotification.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/airbnb-platform-front/angular.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/airbnb-platform-front/angular.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/airbnb-platform-front/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/airbnb-platform-front/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/airbnb-platform-front/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/airbnb-platform-front/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/airbnb-platform-front/src/app/landlord/properties-create/properties-create.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/airbnb-platform-front/src/app/landlord/properties-create/properties-create.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/airbnb-platform-front/src/app/landlord/properties-create/step/location-step/country.service.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/airbnb-platform-front/src/app/landlord/properties-create/step/location-step/country.service.spec.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/airbnb-platform-front/src/app/landlord/properties-create/step/location-step/country.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/airbnb-platform-front/src/app/landlord/properties-create/step/location-step/country.service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/airbnb-platform-front/src/app/landlord/properties-create/step/location-step/location-step.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/airbnb-platform-front/src/app/landlord/properties-create/step/location-step/location-step.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/airbnb-platform-front/src/app/landlord/properties-create/step/location-step/location-step.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/airbnb-platform-front/src/app/landlord/properties-create/step/location-step/location-step.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/airbnb-platform-back/src/main/java/com/chris/airbnb_platform_back/listing/application/LandlordService.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/airbnb-platform-back/src/main/java/com/chris/airbnb_platform_back/listing/application/LandlordService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/airbnb-platform-back/src/main/java/com/chris/airbnb_platform_back/listing/application/dto/PictureService.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/airbnb-platform-back/src/main/java/com/chris/airbnb_platform_back/listing/application/PictureService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/airbnb-platform-back/src/main/java/com/chris/airbnb_platform_back/listing/presentation/LandlordResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/airbnb-platform-back/src/main/java/com/chris/airbnb_platform_back/listing/presentation/LandlordResource.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/airbnb-platform-back/src/main/java/com/chris/airbnb_platform_back/listing/repository/ListingRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/airbnb-platform-back/src/main/java/com/chris/airbnb_platform_back/listing/repository/ListingRepository.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,9 +22,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Enum" />
         <option value="Interface" />
         <option value="Record" />
+        <option value="Enum" />
         <option value="Class" />
       </list>
     </option>
