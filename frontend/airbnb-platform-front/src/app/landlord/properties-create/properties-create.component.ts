@@ -21,7 +21,7 @@ import {PriceVO} from "../model/listing-vo.model";
 @Component({
   selector: 'app-properties-create',
   standalone: true,
-  imports: [CategoryStepComponent, FooterStepComponent],
+  imports: [CategoryStepComponent, FooterStepComponent, LocationStepComponent, InfoStepComponent, PictureStepComponent, DescriptionStepComponent, PriceStepComponent],
   templateUrl: './properties-create.component.html',
   styleUrl: './properties-create.component.scss'
 })

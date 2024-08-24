@@ -9,7 +9,7 @@ import {catchError, map, Observable, of, shareReplay, tap} from "rxjs";
   providedIn: 'root'
 })
 
-export class CountryComponent {
+export class CountryService {
 
   http = inject(HttpClient);
 

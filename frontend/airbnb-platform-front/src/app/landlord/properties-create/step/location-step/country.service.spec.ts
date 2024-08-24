@@ -1,23 +1,16 @@
-import { ComponentFixture, TestBed } from '@angular/core/testing';
+import {TestBed} from '@angular/core/testing';
 
-import { CountryComponent } from './country.service';
+import {CountryService} from './country.service';
 
-describe('CountryComponent', () => {
-  let component: CountryComponent;
-  let fixture: ComponentFixture<CountryComponent>;
+describe('CountryService', () => {
+  let service: CountryService;
 
-  beforeEach(async () => {
-    await TestBed.configureTestingModule({
-      imports: [CountryComponent]
-    })
-    .compileComponents();
-    
-    fixture = TestBed.createComponent(CountryComponent);
-    component = fixture.componentInstance;
-    fixture.detectChanges();
+  beforeEach(() => {
+    TestBed.configureTestingModule({});
+    service = TestBed.inject(CountryService);
   });
 
-  it('should create', () => {
-    expect(component).toBeTruthy();
+  it('should be created', () => {
+    expect(service).toBeTruthy();
   });
 });
