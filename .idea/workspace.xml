@@ -5,7 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2d9ae65c-b6f9-46cd-b35c-bb60d52e3af1" name="Changes" comment="Landlord listing Backend">
+      <change afterPath="$PROJECT_DIR$/backend/airbnb-platform-back/src/main/java/com/chris/airbnb_platform_back/booking/application/BookingService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/airbnb-platform-back/src/main/java/com/chris/airbnb_platform_back/booking/application/dto/BookedListingDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/airbnb-platform-back/src/main/java/com/chris/airbnb_platform_back/booking/application/dto/NewBookingDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/airbnb-platform-back/src/main/java/com/chris/airbnb_platform_back/booking/presentation/BookingResource.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/airbnb-platform-back/src/main/java/com/chris/airbnb_platform_back/listing/application/TenantService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/airbnb-platform-back/src/main/java/com/chris/airbnb_platform_back/listing/presentation/TenantResource.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/airbnb-platform-back/src/main/java/com/chris/airbnb_platform_back/booking/mapper/BookingMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/airbnb-platform-back/src/main/java/com/chris/airbnb_platform_back/booking/mapper/BookingMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/airbnb-platform-back/src/main/java/com/chris/airbnb_platform_back/booking/repository/BookingRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/airbnb-platform-back/src/main/java/com/chris/airbnb_platform_back/booking/repository/BookingRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/airbnb-platform-front/src/app/layout/navbar/category/category.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/airbnb-platform-front/src/app/layout/navbar/category/category.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/airbnb-platform-front/src/app/layout/navbar/category/category.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/airbnb-platform-front/src/app/layout/navbar/category/category.component.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,8 +26,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
-        <option value="Record" />
         <option value="Enum" />
+        <option value="Record" />
         <option value="Class" />
       </list>
     </option>

@@ -1,2 +1,11 @@
-package com.chris.airbnb_platform_back.booking.application.dto;public record NewBookingDTO() {
+package com.chris.airbnb_platform_back.booking.application.dto;
+
+import jakarta.validation.constraints.NotNull;
+
+import java.time.OffsetDateTime;
+import java.util.UUID;
+
+public record NewBookingDTO(@NotNull OffsetDateTime startDate,
+                            @NotNull OffsetDateTime endDate,
+                            @NotNull UUID listingPublicId) {
 }
