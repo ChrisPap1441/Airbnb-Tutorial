@@ -25,7 +25,7 @@ import {PriceVO} from "../model/listing-vo.model";
   templateUrl: './properties-create.component.html',
   styleUrl: './properties-create.component.scss'
 })
-export class PropertiesCreateComponent {
+export class PropertiesCreateComponent implements OnDestroy{
 
   CATEGORY = "category";
   LOCATION = "location";
