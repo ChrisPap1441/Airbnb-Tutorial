@@ -1,17 +1,19 @@
-import { Component, effect, inject, OnInit } from '@angular/core';
-import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
-import { ButtonModule } from 'primeng/button';
+import {Component, effect, inject, OnInit} from '@angular/core';
+import {ButtonModule} from "primeng/button";
+import {FontAwesomeModule} from "@fortawesome/angular-fontawesome";
 import {ToolbarModule} from "primeng/toolbar";
 import {MenuModule} from "primeng/menu";
+import {CategoryComponent} from "./category/category.component";
+import {AvatarComponent} from "./avatar/avatar.component";
 import {DialogService, DynamicDialogRef} from "primeng/dynamicdialog";
-import { CategoryComponent } from './category/category.component';
-import { AvatarComponent } from './avatar/avatar.component';
-import { MenuItem } from 'primeng/api';
-import { ToastService } from '../toast.service';
-import { AuthService } from '../../core/auth/auth.service';
-import { ActivatedRoute } from '@angular/router';
-import { User } from '../../core/model/user.model';
+import {MenuItem} from "primeng/api";
+import {ToastService} from "../toast.service";
+import {AuthService} from "../../core/auth/auth.service";
+import {User} from "../../core/model/user.model";
 import {PropertiesCreateComponent} from "../../landlord/properties-create/properties-create.component";
+import {SearchComponent} from "../../tenant/search/search.component";
+import {ActivatedRoute} from "@angular/router";
+import dayjs from "dayjs";
 
 @Component({
   selector: 'app-navbar',
@@ -53,6 +55,7 @@ export class NavbarComponent implements OnInit {
 
   ngOnInit(): void {
     this.authService.fetch(false);
+    this.extractInformationForSearch();
   }
 
   private fetchMenu(): MenuItem[] {
@@ -106,5 +109,34 @@ export class NavbarComponent implements OnInit {
         modal: true,
         showHeader: true
       })
+  }
+
+  openNewSearch(): void {
+    this.ref = this.dialogService.open(SearchComponent,
+      {
+        width: "40%",
+        header: "Search",
+        closable: true,
+        focusOnShow: true,
+        modal: true,
+        showHeader: true
+      });
+  }
+
+  private extractInformationForSearch(): void {
+    this.activatedRoute.queryParams.subscribe({
+      next: params => {
+        if (params["location"]) {
+          this.location = params["location"];
+          this.guests = params["guests"] + " Guests";
+          this.dates = dayjs(params["startDate"]).format("MMM-DD")
+            + " to " + dayjs(params["endDate"]).format("MMM-DD");
+        } else if (this.location !== "Anywhere") {
+          this.location = "Anywhere";
+          this.guests = "Add guests";
+          this.dates = "Any week";
+        }
+      }
+    })
   }
 }
